@@ -1,0 +1,1111 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Noto+Sans+KR:wght@400;700&display=swap");
+
+/* 공통 */
+.header {
+  position: relative;
+}
+
+h2 {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+h3 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.visual img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.visual.animate img {
+  max-width: 92%;
+}
+
+/* 회사소개 */
+.company_intro {
+  padding-bottom: 180px;
+}
+
+.company_intro h3,
+.skills h3,
+.contact h3 {
+  margin-left: 80px;
+}
+
+.company_intro h3.first,
+.skills h3,
+.contact h3 {
+  margin-top: -40px;
+}
+
+.company_intro h4 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.company_intro .history {
+  margin-top: 100px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.company_intro .history .date {
+  width: 330px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.company_intro .history .item {
+  display: flex;
+  padding: 80px 100px;
+}
+
+.company_intro .history .item+.item {
+  border-top: 1px solid #000;
+}
+
+.company_intro .history ul>li {
+  padding-left: 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  position: relative;
+}
+
+.company_intro .history ul>li::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.company_intro .history+h3 {
+  margin-top: 100px;
+}
+
+.company_intro .txt {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.company_intro .txt+h4 {
+  margin-top: 64px;
+}
+
+.company_intro .member {
+  padding: 0 80px;
+}
+
+.company_intro .team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 150px;
+  margin-top: 48px;
+}
+
+.company_intro .team+h4 {
+  margin-top: 80px;
+}
+
+.company_intro .team .item {
+  text-align: center;
+}
+
+.company_intro .team .item .name {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.company_intro .team .item .name strong {
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.company_intro .team .item .info {
+  width: 150%;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  transform: translateX(-16%);
+}
+
+/* 보유기술 */
+.skills {
+  padding-bottom: 216px;
+}
+
+.skills h4 {
+  margin-left: 80px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.skills h4.first {
+  margin-top: 131px;
+}
+
+.skills h4.second {
+  margin-top: 127px;
+}
+
+.skills .blockchain {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80px;
+  margin-top: 118px;
+}
+
+.skills .blockchain .item {
+  width: 280px;
+  aspect-ratio: 1/1;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.skills .blockchain .item em {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  transform: translate(42px, -18px);
+}
+
+.skills .blockchain .item p {
+  margin-top: 143px;
+  text-align: center;
+}
+
+.skills .blockchain .item img {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 142px;
+}
+
+.skills .txt {
+  margin-top: 100px;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+  text-align: center;
+}
+
+.skills .ai_bg {
+  max-width: 1200px;
+  margin-top: 100px;
+  transform: translateX(-100px);
+}
+
+.skills .txt_content {
+  display: flex;
+}
+
+.skills .txt_content .txt {
+  width: 50%;
+  margin-top: 87px;
+  word-break: keep-all;
+}
+
+/* 포트폴리오 */
+
+
+.portfolio .layout {
+  margin-top: -489px;
+}
+
+.portfolio h3 {
+  color: #fff;
+  margin-top: 15%;
+  margin-left: 65px;
+}
+
+.portfolio .tab_button {
+  display: flex;
+  column-gap: 40px;
+  margin-top: 52px;
+  margin-left: 100px;
+}
+
+.portfolio .tab_button button {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+  position: relative;
+  z-index: 9;
+  transition: 0.3s;
+}
+
+.portfolio .tab_button button.on {
+  font-weight: 700;
+}
+
+.portfolio .tab_button button::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 9px;
+  background-color: #0038ff;
+  position: absolute;
+  bottom: 0;
+  z-index: -9;
+  transition: 0.3s;
+}
+
+.portfolio .tab_button button.on::after {
+  width: 100%;
+}
+
+.portfolio .tab_content>.item {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.5s;
+  transform: translateY(70px);
+}
+
+.portfolio .tab_content>.item.on {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.portfolio .tab_content .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 59px;
+  row-gap: 64px;
+  width: 100%;
+  margin-top: 88px;
+}
+
+.portfolio .tab_content .list .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio .tab_content .list .item img {
+  width: 360px;
+  aspect-ratio: 1/0.903;
+}
+
+.portfolio .tab_content .list .item .title {
+  margin-top: 16px;
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: 900;
+  position: relative;
+}
+
+.portfolio .tab_content .list .item strong::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin: auto;
+  background-color: #000;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.portfolio .tab_content .list .item:hover strong::after {
+  height: 3px;
+  background-color: #0038ff;
+}
+
+.portfolio .tab_content .list .item .description {
+  margin-top: 4px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.portfolio .tab_content .list .item .img_box {
+  position: relative;
+}
+
+.portfolio .tab_content .list .item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 14, 255, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.portfolio .tab_content .list .item:hover .info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolio .tab_content .list .item .info span {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.portfolio .tab_content .list .item .info p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+/* 포트폴리오 상세 */
+.portfolio_detail {
+  padding-bottom: 190px;
+}
+
+.portfolio_detail .visual {
+  height: 387px;
+  background-color: #000;
+}
+
+.portfolio_detail .layout2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 137px;
+}
+
+.portfolio_detail .btn_back {
+  margin-top: -32px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  position: absolute;
+}
+
+.portfolio_detail .btn_back img {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.portfolio_detail .portfolio_title {
+  font-size: 50px;
+  color: #fff;
+}
+
+.portfolio_detail .right_box {
+  max-width: 415px;
+}
+
+.portfolio_detail .right_box p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.portfolio_detail .right_box .txt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 18px;
+  margin-top: 30px;
+}
+
+.portfolio_detail .right_box .txt p {
+  display: grid;
+  grid-template-columns: 97px 1fr;
+}
+
+.portfolio_detail .right_box .txt p:nth-child(2) {
+  grid-template-columns: 110px 1fr;
+}
+
+.portfolio_detail .right_box .txt span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.portfolio_detail .right_box .txt span:nth-child(odd) {
+  font-weight: 900;
+}
+
+.portfolio_detail .img_box {
+  padding-top: 105px;
+  position: relative;
+}
+
+.portfolio_detail .img_box::after {
+  content: "";
+  display: block;
+  width: 200%;
+  height: calc(100% - 104px);
+  background-color: rgba(0, 0, 0, 0.02);
+  position: absolute;
+  top: 264px;
+  z-index: -1;
+}
+
+.portfolio_detail .img_box img {
+  display: block;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.portfolio_detail .img_box img+img {
+  margin-top: 80px;
+}
+
+.portfolio_detail .img_box img.img_size {
+  width: 830px;
+}
+
+.portfolio_detail .img_box img.img_size2 {
+  width: 600px;
+}
+
+.portfolio_detail .btn_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 269px auto 0;
+}
+
+.portfolio_detail .btn_container .btn_prev img {
+  margin-right: 15px;
+}
+
+.portfolio_detail .btn_container .btn_next img {
+  margin-left: 15px;
+}
+
+/* 문의하기 */
+.contact {
+  padding-bottom: 184px;
+}
+
+.contact .txt {
+  margin-top: 48px;
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.contact h4 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.contact .location_info p {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact .location_info p+p {
+  margin-top: 15px;
+}
+
+.contact .location_info p:first-child img {
+  margin-left: 2px;
+}
+
+.contact form {
+  margin-top: 12px;
+}
+
+.contact .contact_item {
+  /* min-width: 530px; */
+  position: relative;
+}
+
+.contact .contact_item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+}
+
+.contact .contact_item.focus::after {
+  height: 2px;
+  transition: 0.2s;
+}
+
+.contact .contact_item:nth-child(n + 5) {
+  width: 100%;
+}
+
+.contact .contact_item label {
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  top: 40px;
+}
+
+.contact .contact_item.last label {
+  position: relative;
+}
+
+.contact .contact_item input {
+  width: 100%;
+  padding: 40px 0 23px;
+  padding-left: 146px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.7;
+}
+
+.contact .contact_item.last input {
+  margin-top: 16px;
+  padding-left: 10px;
+}
+
+.contact>.layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 104px;
+}
+
+.contact .info {
+  width: 600px;
+}
+
+.contact .first {
+  margin: 0 0 33px;
+}
+
+.contact .second {
+  margin-top: 104px;
+}
+
+.contact .root_daum_roughmap {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
+}
+
+.contact .wrap_controllers {
+  display: none;
+}
+
+.contact .wrap_btn_zoom {
+  display: none !important;
+}
+
+.contact .map_border {
+  display: none;
+}
+
+.contact .button_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.contact button {
+  width: 190px;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  border: 1px solid #000;
+}
+
+@media all and (max-width: 1024px) {
+  /* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+  .header {
+    display: none;
+  }
+
+  .responsive_header {
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .visual {
+    margin-left: 32px;
+    margin-top: 118px;
+    transition: none;
+  }
+
+  .visual-image {
+    object-fit: cover;
+    width: fit-content;
+    min-height: 300px;
+    margin: 0;
+  }
+
+  .company_intro .history {
+    width: 100%;
+  }
+
+  .first {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    /* padding-left: 40px; */
+  }
+
+  .company_intro h3,
+  .skills h3,
+  .contact h3 {
+    margin-left: 40px;
+  }
+
+  .quick_menu {
+    display: none;
+  }
+
+  .btn_top {
+    display: none;
+  }
+
+  .company_intro .history {
+    margin-top: 60px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .company_intro .history .item {
+    padding: 0;
+    margin: 0;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .company_intro .history .date {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 120%;
+  }
+
+  .date {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+  }
+
+  .company_intro .history ul>li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    padding-left: 26px;
+  }
+
+  .company_intro .history ul>li:last-child {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  .company_intro .history {
+    width: 90%;
+  }
+
+  .company_intro .history+h3 {
+    margin-top: 60px;
+    margin-left: 40px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .company_intro .txt {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .company_intro .member {
+    padding: 0 43px;
+  }
+
+  .company_intro .txt+h4 {
+    margin-top: 48px;
+  }
+
+  .company_intro h4 {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .company_intro .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 54px;
+    margin-top: 48px;
+  }
+
+  .company_intro .team+h4 {
+    margin-top: 48px;
+  }
+
+  .company_intro .team .item .info {
+    display: none;
+  }
+
+  .company_intro {
+    padding-bottom: 80px;
+  }
+
+  .logo-mobile {
+    width: 130px;
+    height: 30px;
+  }
+
+  footer {
+    padding-bottom: 48px;
+  }
+
+  .visual.animate img {
+    max-width: 100%;
+  }
+
+  h3 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .company_intro h3.first,
+  .skills h3,
+  .contact h3 {
+    margin-top: -25px;
+  }
+
+  .skills h4.first {
+    margin-top: 64px;
+  }
+
+  .skills h4 {
+    margin-left: 40px;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .skills .blockchain {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+  }
+
+  .skills .blockchain .item {
+    width: 363px;
+    height: 150px;
+    aspect-ratio: 1/1;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+
+  .skills .blockchain .item img {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: auto;
+  }
+
+  .skills .blockchain .item p {
+    position: absolute;
+    top: 88px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .skills .txt {
+    margin-top: 48px;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  .skills h4.second {
+    margin-top: 64px;
+  }
+
+  .skills .ai_bg {
+    margin-top: 40px;
+    margin-left: 32px;
+    transform: none;
+  }
+
+  .skills .txt_content {
+    flex-direction: column;
+  }
+
+  .skills .txt_content .txt {
+    width: 100%;
+    margin-top: 40px;
+    word-break: keep-all;
+  }
+
+  .skills .txt_content .txt:last-child {
+    margin-top: 16px;
+  }
+
+  .skills {
+    padding-bottom: 80px;
+  }
+
+  .contact .txt {
+    margin-top: 21px;
+    margin-left: 48px;
+    margin-right: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    word-break: break-all;
+    text-align: left;
+  }
+
+  .root_daum_roughmap {
+    grid-area: map;
+    height: 300px;
+    min-width: 360px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .contact>.layout {
+    margin-top: 21px;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-bottom: 0;
+    justify-self: center;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact .first {
+    margin: 64px 0 21px 40px;
+  }
+
+  .contact h4 {
+    font-size: 32px;
+  }
+
+  .contact .location_info p {
+    grid-template-columns: 24px 1fr;
+    row-gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 130%;
+    margin-left: 5%;
+    word-break: break-all;
+  }
+
+  .info {
+    grid-area: title;
+  }
+
+  .location_info {
+    grid-area: adress;
+    margin-bottom: 27px;
+  }
+
+  .contact>.layout {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 104px;
+  }
+
+  .contact .second {
+    margin-top: 64px;
+    margin-left: 40px;
+  }
+
+  .contact .contact_item input {
+    padding: 20px 0;
+    padding-left: 100px;
+    font-size: 14px;
+    line-height: 170%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .contact .contact_item label {
+    font-size: 14px;
+    line-height: 170%;
+    position: absolute;
+    left: 16px;
+    top: 20px;
+  }
+
+  .contact .button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .contact {
+    padding-bottom: 80px;
+  }
+
+  .location {
+    width: min-content;
+    /* margin-left: 18%; */
+  }
+
+  .skills .blockchain {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .portfolio_detail .layout2 {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio_detail .portfolio_title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .portfolio_detail .right_box p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .portfolio_detail .btn_back {
+    right: 40%;
+
+  }
+
+  .portfolio_detail .right_box .txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0;
+    margin-top: 40px;
+    margin-bottom: 65px;
+  }
+
+  .portfolio_detail .visual {
+    height: max-content;
+  }
+
+  .portfolio .tab_button {
+    margin-top: 520px;
+    margin-left: 48px;
+    color: #000;
+  }
+
+  .portfolio h3 {
+    position: absolute;
+    top: 150px;
+    margin-left: 65px;
+    margin-top: 50px;
+  }
+
+  .portfolio__visual {
+    min-height: 300px;
+  }
+
+  .location {
+    margin-left: 0;
+    width: min-content;
+    max-width: 100%;
+  }
+}
+
+.sub_container {
+  margin: 0 40px;
+}
